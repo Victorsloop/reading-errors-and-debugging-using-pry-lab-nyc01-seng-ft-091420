@@ -8,18 +8,7 @@ def state_log(star_date)
   "Captain's Log, star date #{star_date}."
 end
 
-def crew
-  ["Geordi", "Data", "Worf", "William", "Beverly", "Deanna"]
-end
-
-def greet_crew (crew_member)
-  greeting_array = []
-  crew.each {|crew_member| greeting_array << "Hello #{crew_member}."}
-  return greeting_array
-end
-
 def engage
-  star_date = generate_star_date
-  state_log(star_date)
-  greet_crew(crew)
+  puts state_log(date)
+  date = generate_star_date
 end
